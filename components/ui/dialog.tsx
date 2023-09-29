@@ -9,12 +9,12 @@ import { cn } from "@/lib/utils"
 const Dialog = DialogPrimitive.Root
 
 const DialogTrigger = DialogPrimitive.Trigger
-
+type DialogPortalType = DialogPrimitive.DialogPortalProps & {className?:string} 
 const DialogPortal = ({
-  className,
+  className,//缺失className类型，需要补回来
   ...props
-}: DialogPrimitive.DialogPortalProps) => (
-  <DialogPrimitive.Portal className={cn(className)} {...props} />
+}: DialogPortalType) => (
+  <DialogPrimitive.Portal />
 )
 DialogPortal.displayName = DialogPrimitive.Portal.displayName
 
