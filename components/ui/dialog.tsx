@@ -14,7 +14,7 @@ const DialogPortal = ({
   className,//缺失className类型，需要补回来
   ...props
 }: DialogPortalType) => (
-  <DialogPrimitive.Portal />
+  <DialogPrimitive.Portal {...props} />
 )
 DialogPortal.displayName = DialogPrimitive.Portal.displayName
 
