@@ -35,8 +35,6 @@ const exampleMap = {
   简单对话: {
     inputText: "我这道题不会怎么办，┭┮﹏┭┮",
     schema: `{
-    "input": "我怕了好吧，不要骂我了好吗",
-    "pipelineJson": {
       "pipes": [{
         "id": "语言学习",
         "use": "llm",
@@ -53,7 +51,6 @@ const exampleMap = {
           }]
         }
       }]
-    }
   }`,
   },
   function_call: {
